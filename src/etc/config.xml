@@ -4,6 +4,7 @@
 		<catalog>
 			<seo>
 				<rewrite_maps_generation_enabled>0</rewrite_maps_generation_enabled>
+				<rewrite_maps_generation_cron_schedule>0 * * * *</rewrite_maps_generation_cron_schedule>
 			</seo>
 		</catalog>
 	</default>

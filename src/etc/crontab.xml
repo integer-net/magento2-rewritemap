@@ -3,7 +3,7 @@
 	<group id="default">
 		<job instance="IntegerNet\RewriteMap\Cron\GenerateRewriteMaps" method="execute"
              name="integernet_rewritemap_generaterewritemaps">
-			<schedule>0 * * * *</schedule>
+			<config_path>catalog/seo/rewrite_maps_generation_cron_schedule</config_path>
 		</job>
 	</group>
 </config>

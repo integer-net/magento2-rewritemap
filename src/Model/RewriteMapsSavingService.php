@@ -47,10 +47,10 @@ class RewriteMapsSavingService
         foreach ($this->storeManager->getStores() as $store) {
             $storeId = (int)$store->getId();
             $this->saveRewriteMap(
-                $this->urlRewriteRepository->findByStoreAndType($storeId, UrlRewriteOptionProvider::PERMANENT)
+                $this->urlRewriteRepository->getByStoreAndType($storeId, UrlRewriteOptionProvider::PERMANENT)
             );
             $this->saveRewriteMap(
-                $this->urlRewriteRepository->findByStoreAndType($storeId, UrlRewriteOptionProvider::TEMPORARY)
+                $this->urlRewriteRepository->getByStoreAndType($storeId, UrlRewriteOptionProvider::TEMPORARY)
             );
         }
     }

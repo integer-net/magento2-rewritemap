@@ -34,7 +34,7 @@ class RewriteMapRepository
      * @return RewriteMap
      * @throws InputException
      */
-    public function findByStoreAndType(int $storeId, int $redirectType): RewriteMap
+    public function getByStoreAndType(int $storeId, int $redirectType): RewriteMap
     {
         if (!in_array($redirectType, self::ALLOWED_REDIRECT_TYPES)) {
             throw new InputException(
