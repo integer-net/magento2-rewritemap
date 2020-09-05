@@ -32,6 +32,11 @@ else
     composer require ${COMPOSER_PACKAGE_NAME}:dev-${TRAVIS_BRANCH}\#${TRAVIS_COMMIT}
 fi
 
+# Add tests/src to autoload-dev on project level
+php -r '$composer_json = json_decode(file_get_contents("composer.json"), true);
+$composer_json["autoload-dev"]["psr-4"]["IntegerNet\\RewriteMap\\"] = "tests/src";
+file_put_contents("composer.json", $composer_json);'
+
 # prepare for test suite
 case $TEST_SUITE in
     integration)
