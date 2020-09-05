@@ -12,14 +12,14 @@ addons:
 language: php
 jobs:
   include:
-    - php: 7.3
+    - php: 7.1
       env:
-        - MAGENTO_VERSION=2.3
+        - MAGENTO_VERSION=2.2
         - TEST_SUITE=integration
     - php: 7.3
       env:
         - MAGENTO_VERSION=2.3
-        - TEST_SUITE=unit
+        - TEST_SUITE=integration
     - php: 7.4
       env:
         - MAGENTO_VERSION=2.4
