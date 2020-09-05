@@ -38,7 +38,7 @@ class GenerateRewriteMapsCronTest extends TestCase
 
     /**
      * @magentoAppArea crontab
-     * @magentoConfigFixture catalog/seo/rewrite_maps_generation_enabled 1
+     * @magentoAdminConfigFixture catalog/seo/rewrite_maps_generation_enabled 1
      * @test
      */
     public function runs_if_configured()
@@ -49,7 +49,7 @@ class GenerateRewriteMapsCronTest extends TestCase
 
     /**
      * @magentoAppArea crontab
-     * @magentoConfigFixture catalog/seo/rewrite_maps_generation_enabled 0
+     * @magentoAdminConfigFixture catalog/seo/rewrite_maps_generation_enabled 0
      * @test
      */
     public function does_not_run_if_not_configured()
