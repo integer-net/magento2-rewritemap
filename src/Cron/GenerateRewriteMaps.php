@@ -3,11 +3,11 @@ declare(strict_types=1);
 
 namespace IntegerNet\RewriteMap\Cron;
 
-use IntegerNet\RewriteMap\Model\RewriteMapsSavingService as RewriteMapsSavingService;
+use IntegerNet\RewriteMap\Model\RewriteMapsSavingService;
 use Magento\Framework\App\Config\ScopeConfigInterface;
-use Magento\Framework\Exception\FileSystemException as FileSystemException;
+use Magento\Framework\Exception\FileSystemException;
 use Magento\Framework\Exception\InputException;
-use Psr\Log\LoggerInterface as LoggerInterface;
+use Psr\Log\LoggerInterface;
 
 class GenerateRewriteMaps
 {

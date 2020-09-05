@@ -6,7 +6,6 @@ namespace IntegerNet\RewriteMap;
 use IntegerNet\RewriteMap\Model\RewriteMapRepository;
 use Magento\Store\Api\StoreRepositoryInterface;
 use Magento\TestFramework\Helper\Bootstrap;
-use Magento\UrlRewrite\Model\OptionProvider;
 use PHPUnit\Framework\TestCase;
 
 /**

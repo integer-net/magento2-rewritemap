@@ -6,6 +6,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-### Changed
-### Removed
-### Fixed
+
+- Cronjob that generates rewrite map files for each store and redirect type

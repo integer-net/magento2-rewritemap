@@ -13,7 +13,9 @@
 
 ---
 
-Generate RewriteMap files for Apache from Magento URL rewrites
+Generate RewriteMap files for Apache from custom Magento URL rewrites (redirects). This can be useful to re-use the rewrites in a different frontend.
+
+For example, to use the redirects in **Vue Storefront**, a reverse proxy that uses the generated rewrite maps can be configured.  
 
 ## Installation
 
@@ -29,7 +31,16 @@ Generate RewriteMap files for Apache from Magento URL rewrites
 
 ## Configuration
 
+In your store configuration navigate to *Catalog > SEO*:
+
+- **Enable Rewrite Maps Generation**: set to "yes" to enable (Default: no)
+- **Rewrite Maps Generation Cron Schedule**: configure, when rewrite maps are regenerated (Default: every hour)
+
 ## Usage
+
+Rewrite maps are stored in `var/rewrite_maps` as one text file per store and redirect type (301, 302).
+
+See http://httpd.apache.org/docs/current/rewrite/rewritemap.html for details how to use those files.
 
 ## Changelog
 
