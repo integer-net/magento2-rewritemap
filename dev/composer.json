@@ -1,0 +1,26 @@
+{
+  "name": "integer-net/magento2-module-template-init",
+  "description": "Initializes Magento module based on integer_net template",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Fabian Schmengler",
+      "email": "fs@integer-net.de"
+    }
+  ],
+  "bin": [
+    "./bin/init"
+  ],
+  "require": {
+    "php": "^7.4",
+    "minicli/minicli": "^2.1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "IntegerNet\\ModuleTemplate\\": "src"
+    }
+  }
+}
