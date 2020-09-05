@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <ruleset>
+    <exclude-pattern>tests/</exclude-pattern>
     <rule ref="PSR1"/>
     <rule ref="PSR2"/>
 </ruleset>
