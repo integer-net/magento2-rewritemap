@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="catalog">
+			<group id="seo">
+				<field id="rewrite_maps_generation_enabled" showInDefault="1" showInStore="1" showInWebsite="1"
+                       sortOrder="500" translate="label" type="select">
+					<label>Enable Rewrite Maps Generation</label>
+					<comment>
+						<![CDATA[Enables the generation of rewrite maps files from the Magento UrlRewrites.
+						The files are saved under
+						path_to_magento/var/rewrite_map/map/rewrite-map-[REDIRECT_TYPE]-store-[STORE_ID].txt]]>
+					</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="rewrite_maps_generation_cron_schedule" showInDefault="1" showInStore="1" showInWebsite="1"
+					   sortOrder="510" translate="label" type="text">
+					<label>Rewrite Maps Generation Cron Schedule</label>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
