@@ -10,6 +10,9 @@ build:
       - true
   nodes:
     analysis:
+      dependencies:
+        after:
+            - vendor/bin/phpcs --config-set installed_paths ../../magento/magento-coding-standard/
       tests:
         override:
           - php-scrutinizer-run
