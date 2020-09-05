@@ -31,8 +31,8 @@ class RewriteMapsSavingService
     public function __construct(
         Filesystem $filesystem,
         StoreManagerInterface $storeManager,
-        RewriteMapRepository $urlRewriteRepository)
-    {
+        RewriteMapRepository $urlRewriteRepository
+    ) {
         $this->filesystem = $filesystem;
         $this->storeManager = $storeManager;
         $this->urlRewriteRepository = $urlRewriteRepository;

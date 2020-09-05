@@ -39,9 +39,9 @@ class RewriteMapRepository
         if (!in_array($redirectType, self::ALLOWED_REDIRECT_TYPES)) {
             throw new InputException(
                 __(
-                    'The given redirect type "%1" is not a allowed type: %2',
+                    'The given redirect type "%1" is not an allowed type: [%2]',
                     $redirectType,
-                    print_r(self::ALLOWED_REDIRECT_TYPES, true)
+                    implode(',', self::ALLOWED_REDIRECT_TYPES)
                 )
             );
         }

@@ -27,8 +27,8 @@ class GenerateRewriteMaps
     public function __construct(
         RewriteMapsSavingService $rewriteMapsSavingService,
         LoggerInterface $logger,
-        ScopeConfigInterface $scopeConfig)
-    {
+        ScopeConfigInterface $scopeConfig
+    ) {
         $this->rewriteMapsSavingService = $rewriteMapsSavingService;
         $this->logger = $logger;
         $this->scopeConfig = $scopeConfig;
