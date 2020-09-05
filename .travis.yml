@@ -35,11 +35,10 @@ jobs:
         - TEST_SUITE=unit
         - COVERAGE=true
   allow_failures:
-      - php: 7.4
-        env:
-            - MAGENTO_VERSION=2.4-develop
-            - TEST_SUITE=integration
-
+    - php: 7.4
+      env:
+        - MAGENTO_VERSION=2.4-develop
+        - TEST_SUITE=integration
 env:
   global:
     - COMPOSER_BIN_DIR=~/bin
