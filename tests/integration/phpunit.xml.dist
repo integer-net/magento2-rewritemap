@@ -10,8 +10,8 @@
          bootstrap="./framework/bootstrap.php"
 >
     <testsuites>
-        <testsuite name=":module-namespace_:module-name Integration Tests">
-            <directory suffix="Test.php">../../../vendor/:vendor/:package/tests/integration</directory>
+        <testsuite name="IntegerNet_RewriteMap Integration Tests">
+            <directory suffix="Test.php">../../../vendor/integer-net/magento2-rewritemap/tests/integration</directory>
         </testsuite>
     </testsuites>
     <!-- PHP INI settings and constants definition -->

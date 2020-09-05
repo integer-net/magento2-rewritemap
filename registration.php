@@ -2,6 +2,6 @@
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    ':module-namespace_:module-name',
+    'IntegerNet_RewriteMap',
     __DIR__ . '/src'
 );

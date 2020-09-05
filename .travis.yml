@@ -33,7 +33,7 @@ jobs:
 env:
   global:
     - COMPOSER_BIN_DIR=~/bin
-    - COMPOSER_PACKAGE_NAME=:vendor/:package
+    - COMPOSER_PACKAGE_NAME=integer-net/magento2-rewritemap
 cache:
   apt: true
   directories:
